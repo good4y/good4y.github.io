@@ -1,0 +1,14 @@
+# JPA란?
+
+객체를 관계형 데이터베이스에 저장하려면 개발자는 많은 코드와 SQL을 작성해야 한다.    
+이런 문제를 피하기 위해 자바 ORM표준인 JPA는 SQL작성 없이 객체를 데이터베이스에 직접  
+저장할 수 있게 도와주고, 객체와 관계형 데이터베이스의 차이도 중간에서 해결해준다.  
+ 
+코드 한 줄로 CRUD를 해결해준다.  
+- 저장 jpa.persist(member)  
+- 조회 Member member = jpa.find(memberId)  
+- 수정 member.setName("변경할이름")  
+- 삭제 jpa.remove(member)  
+
+https://www.inflearn.com/course/ORM-JPA-Basic#curriculum  
+JPA에 대한 인프런강의이며 개요에 대한 강의는 무료이니 참고하기!
