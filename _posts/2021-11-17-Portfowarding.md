@@ -36,6 +36,8 @@
 iptables는 리눅스에서 방화벽을 구성하거나 NAT(Network Address Translation)에 사용한다
 
 ## 자주 사용하는 iptables command  
+- 적용상태 확인
+$ iptables -nvL --line-numbers
 - 특정 IP 차단  
 $ iptables -I INPUT -s xxx.xxx.xxx.xxx -j DROP  
 - 특정 IP 허용  
@@ -44,4 +46,9 @@ $ iptables -I INPUT -s xxx.xxx.xxx.xxx -j ACCEPT
 $ iptables -A INPUT -p tcp --dport xxxx -j DROP  
 - 특정 IP / Port 허용  
 $ iptables -A INPUT -p tcp -s xxx.xxx.xxx.xxx --dport xxxx -j ACCEPT  
-
+- INPUT chain 에 state 모듈 상태가 New 이고 프로토콜이 tcp 이고 목적지 port 가 8088 인 패킷에 대한 허용추가  
+$ iptables -A INPUT -p tcp -m state --state NEW -m tcp --dport 8088 -j ACCEPT  
+- 규칙삭제  
+$ iptables -D INPUT -p tcp -s xxx.xxx.xxx.xxx --dport xxxx -j ACCEPT  
+- 적용된 규칙 전부 삭제  
+$ iptables --flush  
