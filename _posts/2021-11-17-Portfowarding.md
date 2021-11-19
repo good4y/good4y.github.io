@@ -29,9 +29,19 @@
 - 49152 ~ 65535 사이의 Dynamic 포트는 어떤 프로세스에 의해서도 사용이 가능한 임시 포트이다.  
 
 ## iptables
+리눅스에서는 보안상의 이유로 1023번 이하의 Well Known포트는 Root 유저만 사용이 가능하다.  
+따라서 WEB서비스 요청시 80번 포트를 Binding 하기 위해서는 Root 계정으로 접근하거나 sudo 명령어를 통해 해야한다.  
+이를 피하기 위해 포트포워딩을 이용하고
 
 iptables는 리눅스에서 방화벽을 구성하거나 NAT(Network Address Translation)에 사용한다
 
-#### 사용법 : iptables -t 테이블 액션 체인 매치 -j 타겟
+## 자주 사용하는 iptables command  
+- 특정 IP 차단  
+$ iptables -I INPUT -s xxx.xxx.xxx.xxx -j DROP  
+- 특정 IP 허용  
+$ iptables -I INPUT -s xxx.xxx.xxx.xxx -j ACCEPT  
+- 특정 Port 차단  
+$ iptables -A INPUT -p tcp --dport xxxx -j DROP  
+- 특정 IP / Port 허용  
+$ iptables -A INPUT -p tcp -s xxx.xxx.xxx.xxx --dport xxxx -j ACCEPT  
 
-Root 사용자만 다룰 수 있다.
