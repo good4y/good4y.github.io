@@ -36,8 +36,8 @@
 iptables는 리눅스에서 방화벽을 구성하거나 NAT(Network Address Translation)에 사용한다
 
 ## 자주 사용하는 iptables command  
-- 적용상태 확인
-$ iptables -nvL --line-numbers
+- 적용상태 확인  
+$ iptables -nvL --line-numbers  
 - 특정 IP 차단  
 $ iptables -I INPUT -s xxx.xxx.xxx.xxx -j DROP  
 - 특정 IP 허용  
