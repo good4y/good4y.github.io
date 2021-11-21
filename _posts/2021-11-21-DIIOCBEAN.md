@@ -16,13 +16,16 @@ IoC(Inversion of Control)이란 메소드나 객체의 호출작업을 개발자
 
 이와 같이 스프링이 모든 의존성 객체를 만들어주고 필요한 곳에 주입시켜 줌으로써   
 제어의 흐름을 사용자가 컨트롤 하는 것이 아니라 스프링에 맡겨 작업을 처리하게 된다.  
+<img src="https://user-images.githubusercontent.com/43599437/142762205-9b1f14e5-0418-4b87-a889-cdce55cc00c5.jpg"/>
 
 # DI
 
 DI(Dependency Injection)이란 객체가 서로 의존하는 관계가 되게 의존성을 주입하는 것이다.   
 IoC에서의 DI는 각 클래스 사이에 필요로 하는 의존관계를 빈 설정 정보를 바탕으로 컨테이너가 자동으로 연결 해 주는 것이다.  
 이를 통해 모듈 간의 결합도가 낮아지고 유연성이 높아진다.  
+<img src="https://user-images.githubusercontent.com/43599437/142762207-a5823e79-01bb-4a06-ad0d-e9a9ca4e9941.gif"/>
 
 # Bean
+
 스프링에서는 객체를 Bean이라고 부르며, 프로젝트가 실행 될 때 사용자가 Bean으로 관리하는 객체들의 생성과 소멸에 관련한 작업을  
 자동으로 수행해 주는데 객체가 생성 되는 곳을 스프링에서는 Bean 컨테이너라고 부른다.
