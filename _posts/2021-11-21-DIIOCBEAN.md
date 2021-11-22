@@ -1,3 +1,8 @@
+---
+layout: single
+title:  "DI - IoC - BEAN"
+---
+
 # IoC
 
 IoC(Inversion of Control)이란 메소드나 객체의 호출작업을 개발자가 결정하는 것이 아니라 외부에서 결정되는 것을 말한다.  
