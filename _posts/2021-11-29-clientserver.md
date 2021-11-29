@@ -7,6 +7,8 @@ Client-Server모델은 컴퓨터 네트워크 또는 인터넷을 통해 통신�
 서버는 서비스를 제공하는 컴퓨터 이며 서비스를 요청하는 여러 클라이언트에 기능 또는 서비스를 제공합니다.  
 담당하는 기능에 따라 Aplication Server, Computing Server, Database Server, Web Server 등으로 나뉩니다.  
 
+<img src="https://user-images.githubusercontent.com/43599437/143849326-903d1ba9-504c-45cc-9b59-fd36440b254d.png"/>
+
 해당 모델이 작동하는 예를 들면,  
 - 손님이 온라인 뱅킹 서비스를 웹 브라우저로 접근하여 은행의 웹 서버에 요청합니다. (클라이언트)
 - 고객의 로그인 자격은 데이터베이스에 저장 될 수 있으며, 웹 서버는 클라이언트의 요청에 의해 데이터 베이스 서버에 접근합니다.  
