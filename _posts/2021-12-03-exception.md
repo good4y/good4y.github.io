@@ -43,3 +43,11 @@ Spring에는 프로젝트 전역에서 발생하는 Exception을 한 곳에서 �
 Enum 클래스로 Error코드를 정의하면 Exception 클래스를 매번 생성하지 않아도 된다.
 
 실제 클라이언트에게 날아가는 응답에서 code부분만 확인하면 어떤 에러가 발생했는지 쉽게 파악 가능하다.
+
+클래스의 종류는 다음과 같다.
+- ErrorCode : 핵심. 모든 예외 케이스를 이곳에서 관리함
+- CustomException : 기본적으로 제공되는 Exception 외에 사용
+- ErrorResponse : 사용자에게 JSON 형식으로 보여주기 위해 에러 응답 형식 지정
+- GlobalExceptionHandler : Custom Exception Handler
+@ControllerAdvice : 프로젝트 전역에서 발생하는 Exception 을 잡기 위한 클래스
+@ExceptionHandler : 특정 Exception 을 지정해서 별도로 처리해줌
