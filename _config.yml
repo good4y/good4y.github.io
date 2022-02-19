@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "김영철"
 description              : "An amazing website."
 url                      : "https://good4y.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -102,15 +102,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "김영철"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "호기심이 모든 일의 시작입니다. 메타인지를 높이기 위해 노력하는 개발자입니다."
+  location         : "서울"
+  email            : "kmosh1212@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:kmosh1212@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
